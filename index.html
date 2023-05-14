@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi proyecto integrador</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/style/fuente.css">
+    <link rel="stylesheet" href="/style/texto-opaco.css">
+    <link rel="stylesheet" href="/style/color-textos.css">
+    <link rel="stylesheet" href="/style/cuerpo.css">
+    
+    <link rel="stylesheet" href="/style/cabecera/cabecera.css">
+    <link rel="stylesheet" href="/style/cabecera/contenedor-logo.css">
+    <link rel="stylesheet" href="/style/cabecera/menu/menu.css">
+    <link rel="stylesheet" href="/style/cabecera/logo.css">
+    <link rel="stylesheet" href="/style/cabecera/menu/menu-lista.css">
+    <link rel="stylesheet" href="/style/cabecera/menu/menu-item.css">
+    <link rel="stylesheet" href="/style/cabecera/menu/menu-link.css">
+    
+    <link rel="stylesheet" href="/style/carousel/banner.css">
+    <link rel="stylesheet" href="/style/carousel/imagen-oscura.css">
+    <link rel="stylesheet" href="/style/carousel/posicion-caption.css">
+    <link rel="stylesheet" href="/style/carousel/texto-verde.css">
+
+    <link rel="stylesheet" href="/style/tarjetas/caja-amarillo.css">
+    <link rel="stylesheet" href="/style/tarjetas/caja-azul-marino.css">
+    <link rel="stylesheet" href="/style/tarjetas/caja-gris.css">
+    <link rel="stylesheet" href="/style/tarjetas/caja-morado.css">
+    <link rel="stylesheet" href="/style/tarjetas/cartas-titulo.css">
+    
+    <link rel="stylesheet" href="/style/medio/contenedor.css">
+    <link rel="stylesheet" href="/style/medio/contenedor-medio.css">
+    <link rel="stylesheet" href="/style/medio/medio-der.css">
+    <link rel="stylesheet" href="/style/medio/medio-izq.css">
+    
+    <link rel="stylesheet" href="/style/formulario/formulario-titulo.css">
+    <link rel="stylesheet" href="/style/formulario/formulario.css">
+    <link rel="stylesheet" href="/style/formulario/resaltar.css">
+    <link rel="stylesheet" href="/style/formulario/boton-verde.css">
+
+    <link rel="stylesheet" href="/style/color-foot.css">
+</head>
+<body class="color__cuerpo">
+    
+    <!--------------------------- BARRA DE MENU Y LOGO ---------------------------->
+    <heder>
+        <nav class="navbar justify-content-between cabecera ps-5 pe-5 container-fluid"> 
+            <a class="navbar-brand" href="#"><h2 class="fw-normal fuente color__texto"><img src="/image/logo/codoacodo.png" alt="codo a codo" class="logo">Conf Bs As</h2></a>
+            <ul class="nav">
+                <li class="nav-item"><a href="#conferencia" class="nav-link active color__texto fs-5 fw-normal fuente">La conferencia</a></li>
+                <li class="nav-item"><a href="#oradores" class="nav-link active fs-5 fw-normal texto__opaco fuente">Los oradores</a></li>
+                <li class="nav-item"><a href="#lugar" class="nav-link active fs-5 fw-normal texto__opaco fuente">El lugar y la fecha</a></li>
+                <li class="nav-item"><a href="#conviertete" class="nav-link active fs-5 fw-normal texto__opaco fuente">Conviérte en orador</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active fs-5 fw-normal texto__verde fuente">Comprar tickets</a></li>
+            </ul>
+        </nav>
+    </heder>
+
+    <!--------------------------------- BANNER ----------------------------------->
+    <section class="banner" id="conferencia" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner bg-body">
+                <div class="carousel-item active">
+                    <img src="/image/banners/ba1.jpg" class="d-block w-100 imagen__oscura" alt="buenos aires 1">
+                    <div class="carousel-caption d-none d-md-block posicion__caption">
+                        <h5 class="color__texto text-end fs-3 fw-medium fuente">Conf Bs As</h5>
+                        <p class="color__texto text-end fs-5 fw-normal fuente">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunida el conocimiento y eperiencia de los expertos que están creando el futuro de Internet. Ven a conoocer a miembros del evento, a otros estudiantes de codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-light color__texto fs-5 fw-normal fuente" type="button">Quiero ser orador</button>
+                            <div class="ps-3"></div>
+                            <button class="btn btn-sm btn-success color__texto fs-5 fw-normal fuente" type="button">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-body">
+                    <img src="/image/banners/ba2.jpg" class="d-block w-100 imagen__oscura" alt="buenos aires 2">
+                    <div class="carousel-caption d-none d-md-block posicion__caption">
+                        <h5 class="color__texto text-end fs-3 fw-medium fuente">Conf Bs As</h5>
+                        <p class="color__texto text-end fs-5 fw-normal fuente">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunida el conocimiento y eperiencia de los expertos que están creando el futuro de Internet. Ven a conoocer a miembros del evento, a otros estudiantes de codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-light color__texto fs-5 fw-normal fuente" type="button">Quiero ser orador</button>
+                            <div class="ps-3"></div>
+                            <button class="btn btn-sm btn-success color__texto fs-5 fw-normal fuente" type="button">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-body">
+                    <img src="/image/banners/ba3.jpg" class="d-block w-100 imagen__oscura" alt="buenos aires 3">
+                    <div class="carousel-caption d-none d-md-block posicion__caption">
+                        <h5 class="color__texto text-end fs-3 fw-medium fuente">Conf Bs As</h5>
+                        <p class="color__texto text-end fs-5 fw-normal fuente">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunida el conocimiento y eperiencia de los expertos que están creando el futuro de Internet. Ven a conoocer a miembros del evento, a otros estudiantes de codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-sm btn-outline-light color__texto fs-5 fw-normal fuente" type="button">Quiero ser orador</button>
+                            <div class="ps-3"></div>
+                            <button class="btn btn-sm btn-success color__texto fs-5 fw-normal fuente" type="button">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!----------------------------------- TARJETAS -------------------------------->
+    <section class="container-fluid w-75 pt-3 pb-5" id="oradores">
+        <div class="cartas__titulo">
+            <p class="fuente">CONOCE A LOS</p>
+            <h2 class="fuente"><b>ORADORES</b></h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 color__cuerpo">
+                    <img src="/image/Cards/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                    <div class="card-body">
+                        <div class="caja__amarillo fuente">JavaScript</div>
+                        <div class="caja__azulMarino color__texto fuente">React</div>
+                        <h5 class="card-title fuente">Steve Jobs</h5>
+                        <p class="card-text fuente">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit reprehenderit, aliquid voluptas fugiat, officia necessitatibus recusandae quos porro beatae harum consequatur sit doloribus molestiae! Consectetur deserunt voluptatum exercitationem? Eligendi, vero.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 color__cuerpo">
+                    <img src="/image/Cards/bill.jpg" class="card-img-top" alt="Bill Gates">
+                    <div class="card-body">
+                        <div class="caja__amarillo align-items-center fuente">JavaScript</div>
+                        <div class="caja__azulMarino color__texto fuente">React</div>
+                        <h5 class="card-title fuente">Bill Gates</h5>
+                        <p class="card-text fuente">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit fugit quia illo ipsa maiores voluptatem repudiandae placeat necessitatibus esse, nam reprehenderit beatae, blanditiis minus nesciunt fugiat distinctio ab atque!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 color__cuerpo">
+                    <img src="/image/Cards/ada.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="caja__gris color__texto fuente">Negocios</div>
+                        <div class="caja__morado color__texto fuente">Startups</div>
+                        <h5 class="card-titlefuente">Ada Lovelace</h5>
+                        <p class="card-text fuente">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus excepturi praesentium molestiae eos id porro itaque impedit. Tenetur vero saepe eligendi, obcaecati, perferendis qui sint impedit, eaque eius possimus cum?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------- MEDIO ------------------------------>
+    <section class="contenedor" id="lugar">
+        <div class="contenedor__medio">
+            <img class="medio__der" src="/image/hawaii.jpg" alt="foto">
+            <div class="medio__izq">
+                <h3 class="color__texto pt-3 ps-3 fuente">Bs As - Octubre</h3>
+                <p class="color__texto ps-3 pe-3 text-start fuente">Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades estadouniodenses. Aunque el nombre es Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado consolidada que cubre toda la ciudad (aproximadamente 600km^2 de superficie). </p>
+                <div class="ps-3">
+                    <button class="btn btn-sm btn-outline-light color__texto fuente" type="button">Conocé más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------- FORMULARIO ------------------------>
+    <section class="formulario container" id="conviertete">
+        <div class="formulario__titulo">
+            <p class="fuente">CONVIERTETE EN UN</p>
+            <h2 class="fuente"><b>ORADOR</b></h2>
+            <P class="fuente">Anótate como orador para dar una <span class="resaltar fuente">charla ignite</span>. Cuéntanos de lo que quieres hablar!</P>
+        </div>
+        <form class="g-3 container" action="">
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <input type="text" class="form-control color__cuerpo fuente" placeholder="Nombre" aria-label="First name" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control color__cuerpo fuente" placeholder="Apellido" aria-label="Last name" required>
+                    </div>
+                </div>
+                <div class="pt-3 pb-3">
+                    <textarea class="form-control h-100 was-validated  color__cuerpo fuente" id="floatingTextarea2" placeholder="Sobre que quieres hablar?" required></textarea>
+                    <label class="pt-3">Recuerda incluir un título para tu charla</label>
+                </div>
+                <button class="btn color__boton__verde w-100 color__texto fuente" type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <!-------------------------------- FOOTER ----------------------------->
+    <footer>
+        <nav class="navbar container-fluid justify-content-around color__foot"> 
+            <ul class="nav justify-content-between w-75 align-items-center">
+                <li class="nav-item"><a href="#" class="nav-link active color__texto fs-5 fw-normal fuente">Preguntas <br>frecuentes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active color__texto fs-5 fw-normal fuente">Contáctanos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active color__texto fs-5 fw-normal fuente">Prensa</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active color__texto fs-5 fw-normal fuente">Conferencias</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active color__texto fs-5 fw-normal fuente">Términos y <br>condiciones</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active color__texto fs-5 fw-normal fuente">Privacidad</a></li>
+                <li class="nav-item"><a href="#" class="nav-link active color__texto fs-5 fw-normal fuente">Estudiantes</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.caja__gris {
+    background-color:gray;
+    border-radius: 5px;
+    color: white;
+    display: inline;
+    padding: 0px 5px 0px 5px;
+}

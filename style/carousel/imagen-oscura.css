@@ -1,0 +1,3 @@
+.imagen__oscura {
+    filter: brightness(50%);
+}

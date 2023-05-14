@@ -1,0 +1,8 @@
+.caja__morado {
+    background-color: crimson;
+    border-radius: 5px;
+    color: white;
+    display: inline;
+    margin-left: 5px;
+    padding: 0px 5px 0px 5px;
+}

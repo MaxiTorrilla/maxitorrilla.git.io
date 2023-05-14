@@ -1,0 +1,5 @@
+.contenedor__medio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
